@@ -1,6 +1,7 @@
 package net.jace007.jacesmegawoodproject;
 
 import net.jace007.jacesmegawoodproject.block.ModBlocks;
+import net.jace007.jacesmegawoodproject.item.ModCreativeModeTabs;
 import net.jace007.jacesmegawoodproject.item.ModItems;
 import org.slf4j.Logger;
 
@@ -35,6 +36,7 @@ public class JacesMegaWoodProject {
         NeoForge.EVENT_BUS.register(this);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
