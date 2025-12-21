@@ -1,6 +1,6 @@
 Jaces Mega Wood Project
 =======
-This project is my first step into modding, This mod is only fousing on Wood types inspired by charaters in media. 
+This project is my first step into modding, This mod is only fousing on Wood types inspired by charaters in media. For Neoforge 1.21.11
 
 Modding Credits
 =======
