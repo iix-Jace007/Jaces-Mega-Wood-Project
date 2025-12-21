@@ -6,10 +6,9 @@ import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.neoforged.neoforge.common.world.BiomeModifier;
-import net.neoforged.neoforge.common.world.BiomeModifiers;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
-public class ModBiomeModifiers {
+public class JMWPBiomeModifiers {
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
         var biomes = context.lookup(Registries.BIOME);

@@ -6,8 +6,8 @@ import net.neoforged.neoforge.common.data.DataMapProvider;
 
 import java.util.concurrent.CompletableFuture;
 
-public class ModDataMapProvider extends DataMapProvider {
-    protected ModDataMapProvider(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> lookupProvider) {
+public class JMWPDataMapProvider extends DataMapProvider {
+    protected JMWPDataMapProvider(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> lookupProvider) {
         super(packOutput, lookupProvider);
     }
 

@@ -7,8 +7,8 @@ import net.minecraft.data.recipes.RecipeProvider;
 
 import java.util.concurrent.CompletableFuture;
 
-public class ModRecipeProvider extends RecipeProvider {
-    public ModRecipeProvider(HolderLookup.Provider provider, RecipeOutput recipeOutput) {
+public class JMWPRecipeProvider extends RecipeProvider {
+    public JMWPRecipeProvider(HolderLookup.Provider provider, RecipeOutput recipeOutput) {
         super(provider, recipeOutput);
     }
 
@@ -19,7 +19,7 @@ public class ModRecipeProvider extends RecipeProvider {
 
         @Override
         protected RecipeProvider createRecipeProvider(HolderLookup.Provider provider, RecipeOutput recipeOutput) {
-            return new ModRecipeProvider(provider, recipeOutput);
+            return new JMWPRecipeProvider(provider, recipeOutput);
         }
 
         @Override

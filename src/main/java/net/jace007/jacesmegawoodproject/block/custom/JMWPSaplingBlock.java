@@ -9,10 +9,10 @@ import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.function.Supplier;
 
-public class ModSaplingBlock extends SaplingBlock {
+public class JMWPSaplingBlock extends SaplingBlock {
     private final Supplier<Block> blockToSurviveOn;
 
-    public ModSaplingBlock(TreeGrower treeGrower, Properties properties, Supplier<Block> block) {
+    public JMWPSaplingBlock(TreeGrower treeGrower, Properties properties, Supplier<Block> block) {
         super(treeGrower, properties);
         this.blockToSurviveOn = block;
     }

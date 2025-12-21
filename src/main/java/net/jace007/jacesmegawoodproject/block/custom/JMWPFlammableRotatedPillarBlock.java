@@ -1,6 +1,5 @@
 package net.jace007.jacesmegawoodproject.block.custom;
 
-import net.jace007.jacesmegawoodproject.block.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.AxeItem;
@@ -11,8 +10,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.common.ItemAbility;
 import org.jetbrains.annotations.Nullable;
 
-public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
-    public ModFlammableRotatedPillarBlock(Properties properties) {
+public class JMWPFlammableRotatedPillarBlock extends RotatedPillarBlock {
+    public JMWPFlammableRotatedPillarBlock(Properties properties) {
         super(properties);
     }
 

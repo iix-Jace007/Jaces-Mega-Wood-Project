@@ -9,7 +9,7 @@ import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 
-public class ModConfiguredFeatures {
+public class JMWPConfiguredFeatures {
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
     }

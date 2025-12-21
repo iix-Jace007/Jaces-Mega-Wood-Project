@@ -1,11 +1,11 @@
 package net.jace007.jacesmegawoodproject;
 
-import net.jace007.jacesmegawoodproject.block.ModBlocks;
-import net.jace007.jacesmegawoodproject.entity.ModBlockEntities;
-import net.jace007.jacesmegawoodproject.entity.ModEntities;
-import net.jace007.jacesmegawoodproject.item.ModCreativeModeTabs;
-import net.jace007.jacesmegawoodproject.item.ModItems;
-import net.jace007.jacesmegawoodproject.particle.ModParticles;
+import net.jace007.jacesmegawoodproject.block.JMWPBlocks;
+import net.jace007.jacesmegawoodproject.entity.JMWPBlockEntities;
+import net.jace007.jacesmegawoodproject.entity.JMWPEntities;
+import net.jace007.jacesmegawoodproject.item.JMWPCreativeModeTabs;
+import net.jace007.jacesmegawoodproject.item.JMWPItems;
+import net.jace007.jacesmegawoodproject.particle.JMWPParticles;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -34,12 +34,12 @@ public class JacesMegaWoodProject {
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
-        ModItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
-        ModCreativeModeTabs.register(modEventBus);
-        ModEntities.register(modEventBus);
-        ModBlockEntities.register(modEventBus);
-        ModParticles.register(modEventBus);
+        JMWPItems.register(modEventBus);
+        JMWPBlocks.register(modEventBus);
+        JMWPCreativeModeTabs.register(modEventBus);
+        JMWPEntities.register(modEventBus);
+        JMWPBlockEntities.register(modEventBus);
+        JMWPParticles.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

@@ -24,18 +24,18 @@ public class DataGenerators {
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
         generator.addProvider(true , new LootTableProvider(packOutput, Collections.emptySet(),
-                List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
-        generator.addProvider(true, new ModRecipeProvider.Runner(packOutput, lookupProvider));
+                List.of(new LootTableProvider.SubProviderEntry(JMWPBlockLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
+        generator.addProvider(true, new JMWPRecipeProvider.Runner(packOutput, lookupProvider));
 
-        BlockTagsProvider blockTagsProvider = new ModBlockTagProvider(packOutput, lookupProvider);
+        BlockTagsProvider blockTagsProvider = new JMWPBlockTagProvider(packOutput, lookupProvider);
         generator.addProvider(true, blockTagsProvider);
-        generator.addProvider(true, new ModItemTagProvider(packOutput, lookupProvider));
+        generator.addProvider(true, new JMWPItemTagProvider(packOutput, lookupProvider));
 
-        generator.addProvider(true, new ModDataMapProvider(packOutput, lookupProvider));
+        generator.addProvider(true, new JMWPDataMapProvider(packOutput, lookupProvider));
 
-        generator.addProvider(true, new ModModelProvider(packOutput));
+        generator.addProvider(true, new JMWPModelProvider(packOutput));
 
-        generator.addProvider(true, new ModDatapackProvider(packOutput, lookupProvider));
+        generator.addProvider(true, new JMWPDatapackProvider(packOutput, lookupProvider));
 
 
     }
@@ -47,18 +47,18 @@ public class DataGenerators {
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
         generator.addProvider(true, new LootTableProvider(packOutput, Collections.emptySet(),
-                List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
-        generator.addProvider(true, new ModRecipeProvider.Runner(packOutput, lookupProvider));
+                List.of(new LootTableProvider.SubProviderEntry(JMWPBlockLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
+        generator.addProvider(true, new JMWPRecipeProvider.Runner(packOutput, lookupProvider));
 
-        BlockTagsProvider blockTagsProvider = new ModBlockTagProvider(packOutput, lookupProvider);
+        BlockTagsProvider blockTagsProvider = new JMWPBlockTagProvider(packOutput, lookupProvider);
         generator.addProvider(true, blockTagsProvider);
-        generator.addProvider(true, new ModItemTagProvider(packOutput, lookupProvider));
+        generator.addProvider(true, new JMWPItemTagProvider(packOutput, lookupProvider));
 
-        generator.addProvider(true, new ModDataMapProvider(packOutput, lookupProvider));
+        generator.addProvider(true, new JMWPDataMapProvider(packOutput, lookupProvider));
 
-        generator.addProvider(true, new ModModelProvider(packOutput));
+        generator.addProvider(true, new JMWPModelProvider(packOutput));
 
-        generator.addProvider(true, new ModDatapackProvider(packOutput, lookupProvider));
+        generator.addProvider(true, new JMWPDatapackProvider(packOutput, lookupProvider));
 
 
     }

@@ -6,7 +6,7 @@ import net.minecraft.world.entity.EntityType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-public class ModEntities {
+public class JMWPEntities {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
             DeferredRegister.create(BuiltInRegistries.ENTITY_TYPE, JacesMegaWoodProject.MOD_ID);
 

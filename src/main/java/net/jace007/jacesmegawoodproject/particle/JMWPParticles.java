@@ -6,7 +6,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-public class ModParticles {
+public class JMWPParticles {
         public static final DeferredRegister<ParticleType<?>> PARTICLE_TYPES =
                 DeferredRegister.create(BuiltInRegistries.PARTICLE_TYPE, JacesMegaWoodProject.MOD_ID);
 

@@ -1,9 +1,9 @@
 package net.jace007.jacesmegawoodproject.datagen;
 
 import net.jace007.jacesmegawoodproject.JacesMegaWoodProject;
-import net.jace007.jacesmegawoodproject.worldgen.ModBiomeModifiers;
-import net.jace007.jacesmegawoodproject.worldgen.ModConfiguredFeatures;
-import net.jace007.jacesmegawoodproject.worldgen.ModPlacedFeatures;
+import net.jace007.jacesmegawoodproject.worldgen.JMWPBiomeModifiers;
+import net.jace007.jacesmegawoodproject.worldgen.JMWPConfiguredFeatures;
+import net.jace007.jacesmegawoodproject.worldgen.JMWPPlacedFeatures;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
@@ -14,13 +14,13 @@ import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
-public class ModDatapackProvider extends DatapackBuiltinEntriesProvider {
+public class JMWPDatapackProvider extends DatapackBuiltinEntriesProvider {
     public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
-            .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap)
-            .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
-            .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap);
+            .add(Registries.CONFIGURED_FEATURE, JMWPConfiguredFeatures::bootstrap)
+            .add(Registries.PLACED_FEATURE, JMWPPlacedFeatures::bootstrap)
+            .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, JMWPBiomeModifiers::bootstrap);
 
-    public ModDatapackProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
+    public JMWPDatapackProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, BUILDER, Set.of(JacesMegaWoodProject.MOD_ID));
     }
 }

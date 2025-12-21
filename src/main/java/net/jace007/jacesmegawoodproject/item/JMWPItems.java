@@ -4,7 +4,7 @@ import net.jace007.jacesmegawoodproject.JacesMegaWoodProject;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-public class ModItems {
+public class JMWPItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(JacesMegaWoodProject.MOD_ID);
     //  (`-').->(`-')      _               <-.(`-')  (`-').->
     //  ( OO)_  ( OO).->  (_)     _         __( OO)  ( OO)_
