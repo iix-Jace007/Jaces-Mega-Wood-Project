@@ -1,8 +1,11 @@
 package net.jace007.jacesmegawoodproject;
 
 import net.jace007.jacesmegawoodproject.block.ModBlocks;
+import net.jace007.jacesmegawoodproject.entity.ModBlockEntities;
+import net.jace007.jacesmegawoodproject.entity.ModEntities;
 import net.jace007.jacesmegawoodproject.item.ModCreativeModeTabs;
 import net.jace007.jacesmegawoodproject.item.ModItems;
+import net.jace007.jacesmegawoodproject.particle.ModParticles;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -34,6 +37,9 @@ public class JacesMegaWoodProject {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
+        ModEntities.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+        ModParticles.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
