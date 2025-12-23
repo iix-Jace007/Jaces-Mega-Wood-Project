@@ -32,7 +32,6 @@ public class DataGenerators {
         generator.addProvider(true, new JMWPModelProvider(packOutput));
         generator.addProvider(true, new JMWPDatapackProvider(packOutput, lookupProvider));
         generator.addProvider(true, new JMWPAdvancementProvider(packOutput, lookupProvider));
-        generator.addProvider(true, new JMWPLangGenerator(packOutput, lookupProvider));
         generator.addProvider(true, new JMWPParticleDescriptionGenerator(packOutput, lookupProvider));
 
         BlockTagsProvider blockTagsProvider = new JMWPBlockTagProvider(packOutput, lookupProvider);
