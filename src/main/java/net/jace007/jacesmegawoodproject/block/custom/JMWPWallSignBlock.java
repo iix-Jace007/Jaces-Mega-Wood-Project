@@ -8,7 +8,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.WoodType;
 
 public class JMWPWallSignBlock extends WallSignBlock {
-    public JMWPWallSignBlock(WoodType type, Properties properties) {
+    public JMWPWallSignBlock(WoodType type, Object o, Properties properties) {
         super(type, properties);
     }
 

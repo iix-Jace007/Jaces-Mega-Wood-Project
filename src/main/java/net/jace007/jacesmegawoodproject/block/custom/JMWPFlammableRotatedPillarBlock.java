@@ -1,5 +1,6 @@
 package net.jace007.jacesmegawoodproject.block.custom;
 
+import net.jace007.jacesmegawoodproject.block.JMWPBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.AxeItem;
@@ -34,6 +35,12 @@ public class JMWPFlammableRotatedPillarBlock extends RotatedPillarBlock {
     public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context,
                                                      ItemAbility itemAbility, boolean simulate) {
         if(context.getItemInHand().getItem() instanceof AxeItem) {
+            if (state.is(JMWPBlocks.AGRABAH_CEDER_LOG)) {
+                return JMWPBlocks.STRIPPED_AGRABAH_CEDER_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+            if (state.is(JMWPBlocks.AGRABAH_CEDER_WOOD)) {
+                return JMWPBlocks.STRIPPED_AGRABAH_CEDER_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
 
         }
 
