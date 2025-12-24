@@ -73,7 +73,7 @@ public static final DeferredBlock<Block> AGRABAH_CEDER_LOG = registerBlock("agra
     //    |_____|___|__,|\_/|___|___|
     //
     public static final DeferredBlock<LeavesBlock> AGRABAH_CEDER_LEAVES = registerBlock("agrabah_ceder_leaves",
-            () -> new UntintedParticleLeavesBlock(0.01f, (ParticleOptions) JMWPParticles.AGRABAH_CEDER,
+            () -> new UntintedParticleLeavesBlock(0.01f, (ParticleOptions) JMWPParticles.AGRABAH_CEDER_PARTICALES,
                     BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).pushReaction(PushReaction.DESTROY)
                             .strength(0.2f).randomTicks().sound(SoundType.GRASS).noOcclusion().ignitedByLava()));
     //     _____         _ _
