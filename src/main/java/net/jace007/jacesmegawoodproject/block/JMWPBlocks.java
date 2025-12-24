@@ -5,6 +5,7 @@ import net.jace007.jacesmegawoodproject.block.custom.*;
 import net.jace007.jacesmegawoodproject.item.JMWPItems;
 import net.jace007.jacesmegawoodproject.particle.JMWPParticles;
 import net.jace007.jacesmegawoodproject.util.JMWPWoodTypes;
+import net.jace007.jacesmegawoodproject.worldgen.tree.JMWPTreeGrowers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleOptions;
